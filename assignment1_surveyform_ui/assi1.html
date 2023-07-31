@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="assi1.css">
+</head>
+<body>
+    <div class="row">
+        <img src="assi1.1.png" alt="dog" width="100vw" height="75vw">
+        <h1 style="padding-top: 10px;">Don't Shop. Adopt.</h1>
+    </div>
+    <div>
+        <button style="width: 10%;"><a href="#home">Home</a></button>
+        <button style="width: 10%;"><a href="#survey">Survey</a></button>
+    </div>
+    <div id="home" class="home">
+        <img src="assi1.2.jpg">
+    </div>
+    <div id="survey" class="survey"></div>
+    <h1>Pet Animals Survey Form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name"> Name </label>
+            <input type="text" id="name" placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email"> Email </label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age"> Age </label>
+            <input type="number" id="age" placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="live" id="label-live"> You live with? </label>
+            <select name="live" id="live">
+                <option value="alone">Alone</option>
+                <option value="friend">Friend</option>
+                <option value="family">Family</option>
+            </select>
+        </div>
+  
+        <div class="form-control">
+            <label>
+                Do you own a pet?
+            </label>
+ 
+            <label for="own-1">
+                <input type="radio" id="own-1" name="own">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div class="form-control">
+            <label>Which Pets do you own? </label>
+            <label for="inp-1"><input type="checkbox" name="inp">Dog</input></label>
+            <label for="inp-2"><input type="checkbox" name="inp">Cat</input></label>
+            <label for="inp-3"><input type="checkbox" name="inp">Bird</input></label>
+            <label for="inp-4"><input type="checkbox" name="inp">Squirrel</input></label>
+            <label for="inp-5"><input type="checkbox" name="inp">Snake</input></label>
+            <label for="inp-6"><input type="checkbox" name="inp">Cow</input></label>
+            <label for="inp-7"><input type="checkbox" name="inp">Goat</input></label>
+            <label for="inp-8"><input type="checkbox" name="inp">Pig</input></label>
+            <label for="inp-9"><input type="checkbox" name="inp">Mouse</input></label>
+            <label for="inp-10"><input type="checkbox" name="inp">Horse</input></label>
+        </div>
+  
+        <button type="submit" onclick="alert('Details have been submitted')"> Submit </button>
+    </form>
+    </div>
+</body>
+</html>
