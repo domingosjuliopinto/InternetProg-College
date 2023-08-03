@@ -11,6 +11,12 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+  h2 {
+    animation: H2-Move infinite 15s linear;
+  }
+  p {
+    animation: P-Move infinite 10s linear;
+  }
 }
 
 .App-header {
@@ -34,5 +40,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes H2-Move {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
+
+@keyframes P-Move {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(50px);
   }
 }

@@ -5,18 +5,16 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <h2>
+          This will move horizontally
+        </h2>
         <img src={logo} className="App-logo" alt="logo" />
+        <h2>
+          This will also move horizontally
+        </h2>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          This will move vertically
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
   );
