@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trial Learning Document</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function dragThis(ev){
+                 ev.dataTransfer.setData("text",ev.target.id);
+        }
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+        function dropThis(ev){
+            ev.preventDefault();
+            var data=ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
 </head>
 <body>
     <div>
@@ -55,6 +68,86 @@
             <li>IP</li>
           </ol>
         </details>
-      </section>
+    </section>
+    <hr>
+    <section>
+        <h3>Video and Audio Trial</h3>
+        <video width="250" height="250" controls autoplay>
+            <source src="pexels-helmut-meijer-17807629 (1440p).mp4" type="video/mp4">
+            Your browser doesn't support video
+        </video>
+        <audio controls> 
+            <source src="Lukrembo - Travel (freetouse.com).mp3" type="audio/mp3">
+            Your browser doesn't support audio
+        </audio>
+    </section>
+    <hr>
+    <section>
+        <h3>Drag and Drop</h3>
+        <divi id="div2">
+            <img id="fig1" src="../assignment1_surveyform_ui/assi1.1.png" width="150" height="150" draggable="true" ondragstart="dragThis(event)">
+      </divi> 
+       <divi id="div1" ondragover="allowDrop(event)" ondrop="dropThis(event)">
+    </divi>
+    <h1>Bank Application Form</h1>
+    <form autocomplete="on">
+        <fieldset>
+            <legend>Personal Information</legend>
+            First Name: <input type="text" name="fname" max="20" placeholder="Maximum 20 characters"><br>
+            Last Name: <input type="text" name="lname" autocomplete="off"><br>
+            Year : <input type="number" value="3" readonly> <br>
+            Martial Status:<input type="radio" name="status">Married
+                        <input type="radio" name="status"> Unmarried
+            <br>
+            Date of Birth: <input type="date" name="dob"><br>
+            <input type="submit" name="Submit" value="Submit">
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>User Information</legend>
+            First Name: <input type="text" name="fname" value="FN" disabled><br><br>
+            Last Name: <input type="text" name="name" value="LN" readonly><br><br>
+            Email: <input type="email" name="mail" autofocus><br><br>
+            Password: <input type="password" name="pwd" placeholder="Min. 8 characters required" pattern="^[A-za-0-9]{8,12}"><br><br>
+            Pin Code:<input type="text" name="pin" size="6" maxlength="6"><br><br>
+            <input type="submit" name="Submit">
+    
+        </fieldset>
+    </form>
+    <table border="1" cellspacing="5" cellpadding="50">
+        <caption>SFIT</caption>
+        <thead>
+            <tr>
+                <td colspan="4">STAFF DETAILS</td>
+            </tr>
+        </thead>
+        <tr>
+            <th>Sr. No.</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Department</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Name 1</td>
+            <td>15000</td>
+            <td rowspan="3">Computer</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Name 2</td>
+            <td>15000</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Name 3</td>
+            <td>15000</td>
+            
+        </tr>
+    </table>
+    </section>
+    <hr>
 </body>
 </html>
