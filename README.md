@@ -7,4 +7,4 @@
 * for assignment 1 - <a href="https://www.geeksforgeeks.org/build-a-survey-form-using-html-and-css/">survey form ui</a>
 * for assignment 2 - <a href="https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/">tic tac toe</a>
 * <a href="https://www.pexels.com/video/sunrise-drone-4k-south-africa-17807629/">Video by Helmut Meijer: https://www.pexels.com/video/sunrise-drone-4k-south-africa-17807629/</a>
-* <a href="https://freetouse.com/music/lukrembo/travel">Music track: Travel by Lukrembo Source: https://freetouse.com/music Copyright Free Music for Video</a>
+* <a href="https://freetouse.com/music/lukrembo/travel">Copyright Free Music for Video, Music track: Travel by Lukrembo Source: https://freetouse.com/music</a>

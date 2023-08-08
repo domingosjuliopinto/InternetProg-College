@@ -13,3 +13,64 @@ divi{
     width: 250px;
     height: 250px;
 }
+
+table,td,th{
+    border:2px solid red;
+    
+}
+table{
+    border-collapse: collapse;
+}
+
+th,td{
+    text-align: center;
+    vertical-align:middle;
+}
+
+tr:nth-child(odd){
+
+    background-color:green;
+
+}
+
+div.paper{
+    width: 200px;
+    box-shadow: 0px 2px 5px 2px black;
+    float: left;
+    margin: 30px;
+    animation-name: example;
+    animation-duration: 10s;
+    transform: matrix(1, 0.3,0,1,0,0);
+    position: relative;
+}
+div.data{
+    padding:10px;
+    text-align: center;
+}
+
+@keyframes example{
+    0% {border: solid 1px black; left:0px; top:0px;}
+    50% {border: dotted 5px red;left:200px; top:0px;}
+    100% {border: dashed 5px green;left:0px; top:200px;}
+}
+
+a:link,a:visited{
+    background-color:violet;
+    color:blue;
+    font-size: x-large;
+    text-decoration: none;
+    display:inline-block;
+    padding: 10px 10px;
+}
+a:visited{
+    color:green;
+
+}
+a:hover{
+    color:red;
+    font-style: italic;
+    background-color: yellow;
+}
+a:active{
+    color:black;
+}

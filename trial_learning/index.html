@@ -20,7 +20,7 @@
         }
     </script>
 </head>
-<body>
+<body onload="checkCookies()">
     <div>
     <h1>Welcome</h1>
     </div>
@@ -149,5 +149,73 @@
     </table>
     </section>
     <hr>
+    <section>
+        <h3>Event handling and Onchange</h3>
+        <p id="demo">Are Cookies enabled ?</p>
+        <script>
+            function checkCookies()
+            {
+                let txt=""
+                if(navigator.cookieEnabled==true)
+                {
+                    txt="Cookies are enabled"
+                }
+                else{
+                    txt="Cookies are not enabled"
+                }
+                document.getElementById("demo").innerHTML=txt;
+            }
+        </script>
+        <h2>OnChange event example</h2>
+        Username : <input type="text" id="username" autocomplete="off" onchange="Change()">
+        <br><br>
+        <script>
+            function Change()
+            {
+                var str=document.getElementById("username");
+                str.value=str.value.toUpperCase();
+            }
+        </script>
+        <div style="background-color: darkkhaki;
+        width:150px;
+        height:150px;
+        padding:20px;
+        color:red" onmouseover="Over(this)" onmouseout="Out(this)">Mouse is not on me</div>
+        <script>
+            function Over(e)
+            {
+                e.innerHTML="Mouse is on me";
+                e.style.color="black";
+            }
+            function Out(e)
+            {
+                e.innerHTML="Mouse is has left me";
+                e.style.color="pink";
+            }
+        </script>
+    </section>
+    <section>
+        <h2 style="text-align:center;">CSS LINKS</h2>
+    <p>
+        THIS IS HOW LINKS CAN BE STYLED
+        <a href="../assignment1_surveyform_ui/assi1.2.jpg">CLICK HERE TO KNOW ABOUT DOG</a>
+    </p>
+        <h2 style="text-align: center;">PAPER LIKE CARD EFFECT</h2>
+    <div class="paper">
+        <img src="../assignment1_surveyform_ui/assi1.1.png" width="200" height="200">
+        <div class="data">
+            Assistant Professor
+            M.E.(Computer Engg.)
+        </div>
+    </div>
+    <div class="paper">
+        <img src="../assignment1_surveyform_ui/assi1.1.png" width="200" height="200">
+        <div class="data">
+            Healthy Dog
+            <br>
+            Eat everyday
+        </div>
+    </div>
+    </section>
 </body>
 </html>
