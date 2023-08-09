@@ -19,6 +19,7 @@
             ev.target.appendChild(document.getElementById(data));
         }
     </script>
+    <script src="RegExp.js"></script>
 </head>
 <body onload="checkCookies()">
     <div>
@@ -216,6 +217,58 @@
             Eat everyday
         </div>
     </div>
+    </section>
+    <section>
+        <script>
+            function modify(NC)
+            {
+                var N=document.getElementById('text');
+                N.style.color=NC;
+            }
+            function content(NC)
+            {
+                var N=document.getElementById('text');
+                N.textContent=NC;
+            }
+        </script>
+        <p id="text">GIVE MULTIPLE EFFECTS USING FUNCTION</p>
+        <button type="button" onclick="content('doggo');">CONTENT IS MODIFIED</button>
+        <button type="button" onclick="modify('orange');">CLICK ME</button>
+        <p id="de"></p>
+        <script>
+            const Student={
+                Fname:"doggo",
+                RollNo:25,
+                Details:function()
+                {
+                    return this.Fname+"  "+Student.RollNo;
+                }
+            };
+            document.getElementById("de").innerHTML=Student.Details();
+        </script>
+        <p id="da"></p>
+        <script>
+            const d=new Date();
+            document.getElementById("da").innerHTML=d;
+        </script>
+        <script>
+            function Largest () {
+                document.getElementById("large").innerText= Math.max(23,45,33);
+            }
+        </script>
+        <form method="POST">
+            <h1>Largest of three number</h1>
+            <label for="n1">Number 1</label>
+            <input type="number" name="n1" id="n1" value="23" disabled>
+            <label for="n2">Number 2</label>
+            <input type="number" name="n2" id="n2" value="45" disabled>
+            <label for="n3">Number 3</label>
+            <input type="number" name="n3" id="n3" value="33" disabled>
+            <br><br>
+            Largest Number = <p id="large"></p>
+            <br>
+            <button type="button" onclick="Largest()">Find</button>
+        </form>
     </section>
 </body>
 </html>
