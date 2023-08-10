@@ -1,4 +1,5 @@
 # InternetProg-College
+This repository consist of assignments and concepts tried during Internet Programming subject (BE CMPN, Sem 5)
 
 ## Reference
 * for <a href="https://www.w3schools.com/howto/howto_css_login_form.asp">login form ui</a>
